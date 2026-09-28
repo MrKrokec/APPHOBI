@@ -4,13 +4,13 @@ import { Image, StyleSheet } from 'react-native';
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Igranje video igric</Text>
+      <Text style={styles.mojnaslov}>APPHOBI</Text>
       <Image
-        source={{uri:'https://tse3.mm.bing.net/th/id/OIP.fzdev2VNa5YBWljycHb-zgHaE7?r=0&pid=ImgDet&w=474&h=315&rs=1&o=7&rm=3'}}
-        style={{ width: 270, height: 200 }}
+        source={{uri:'https://t4.ftcdn.net/jpg/05/64/31/67/360_F_564316725_zE8llusnCk3Sfr9rdfKya6fV7BQbjfyV.jpg'}}
+        style={{ width: 250, height: 200, borderRadius: 100}}
         />
-        <Text style={{textAlign: 'center', marginTop: 15, fontSize: 16}}>Dobrodosli v aplikaciji, kjer bom predstavil igranje video igric.
-          V tej aplikaciji predstavljam svoj hobi, priljubljene igre ter pravila in zanimivosti.</Text> 
+        <Text style={{textAlign: 'center', marginTop: 15, fontSize: 16}}>Dobrodosli v aplikaciji, kjer bom na kratko predstavil sebe in nekaj mojih dejavnosti.
+          V tej aplikaciji predstavljam nekaj svojih hobijev in moje top 3. priljubljene video igre.</Text> 
     </View>
   );
 }
@@ -36,5 +36,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     marginTop: 10,
     lineHeight: 22,
+  },
+  mojnaslov: {
+    fontSize: 30,
+    fontWeight: 'bold',
   },
 });
