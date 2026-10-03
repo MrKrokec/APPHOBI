@@ -23,6 +23,7 @@ export default function TabTwoScreen() {
         style={styles.image}
         />
         <Text style={styles.description}>EA Sports FC 26 je nogometna video igra, ki ponuja realistično simulacijo nogometnih tekem. Igra vključuje različne lige, ekipe in igralce, kar omogoča igralcem, da se potopijo v svet profesionalnega nogometa. Poleg tega igra ponuja različne načine igranja, kot so karierni način, turnirji in spletno igranje proti drugim igralcem.</Text>
+        </View>
         {/*Tretja igra*/}
         <View style={styles.card}>
           <Text style={styles.gameTitle}>Tretja priljubljena video igra</Text>
@@ -32,7 +33,7 @@ export default function TabTwoScreen() {
           />
           <Text style={styles.description}>Fortnite je priljubljena video igra, ki združuje elemente streljanja in gradnje. Igra je znana po svojem načinu Battle Royale, kjer se igralci borijo proti drugim igralcem na velikem otoku, dokler ne ostane le en zmagovalec. Poleg tega igra ponuja različne sezonske dogodke, izzive in kozmetične predmete, ki omogočajo igralcem prilagajanje svojih likov in izkušenj v igri.</Text>
 
-        </View>
+      
         
       </View>
     </ScrollView>
@@ -44,6 +45,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'black',
   },
   title: {
     fontSize: 20,
@@ -66,6 +68,7 @@ const styles = StyleSheet.create({
       fontSize: 18,
       fontWeight: 'bold',
       marginBottom: 8,
+      color: 'white',
     },
     image: {
       width: '100%',
@@ -73,5 +76,10 @@ const styles = StyleSheet.create({
       borderRadius: 10,
       marginVertical: 10,
     },
-  
+   description: {
+    fontSize: 14,
+    color:'#dddddd',
+
+
+   },
 });
